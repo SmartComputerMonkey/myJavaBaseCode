@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class IteratorDirDemo {
 	public static void main(String[] args) {
-        IteratorDir(new File("/"));
+        IteratorDir(new File("D://"));
 
     }
 	public static void IteratorDir(File file){
@@ -38,6 +38,7 @@ public class IteratorDirDemo {
                     }*/
                 	map.put("treeid", file.getPath());
                     map.put("uid", f.getPath());
+                    map.put("name", f.getName());
                     files2.add(map);
 //                    System.out.println(sb.toString());
                     
@@ -52,6 +53,7 @@ public class IteratorDirDemo {
                 	
 					System.out.println("++++++==treeid======= " + map.get("treeid"));
 					System.out.println("++++++==uid  ======= " + map.get("uid"));
+					System.out.println("++++++==name  ======= " + map.get("name"));
 				}
             }
         }
